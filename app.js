@@ -1,5 +1,5 @@
 function getPlots(id) {
-    d3.json("samples").then (sampledata => {
+    d3.json("samples.json").then (sampledata => {
         console.log(sampledata)
         
         var ids = sampledata.samples[0].otu_ids;
