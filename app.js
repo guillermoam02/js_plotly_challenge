@@ -11,7 +11,7 @@ function getPlots(id) {
         var labels = sampledata.samples[0].otu_labels.slice(0,10);
         console.log(labels)
 
-        var OTU_top= (samplesata.samples[0].otu_ids.slice(0,10)).reverse();
+        var OTU_top= (sampledata.samples[0].otu_ids.slice(0,10)).reverse();
         var OTU_id = OTU_top.map(d=> "OTU "+d);
         console.log(`OTU_IDS: ${OTU_id}`)
         
