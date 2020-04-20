@@ -41,7 +41,8 @@ function getPlots(id) {
                 b:30
             }
         };
-        Plotly,newPlot("bar", data, layout);
+        
+        Plotly.newPlot("bar", data, layout);
 
         var trace1= {
             x: sampledata.samples[0].otu_ids,
