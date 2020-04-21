@@ -23,7 +23,7 @@ function getPlots(id) {
             y: OTU_id,
             text: labels,
             marker: {
-                color: 'blue'},
+                color: 'dark blue'},
             type: "bar",
             orientation: "h"
         };
@@ -73,7 +73,7 @@ function getDemoInfo(id) {
         console.log(metadata)
 
         var result = metadata.filter(meta=> meta.id.toString()=== id)[0];
-        var demographicInfo = d3.select("#sample.metadata");
+        var demographicInfo = d3.select("#sample-metadata");
         demographicInfo.html("");
 
         Object.entries(result).forEach((key)=> {
